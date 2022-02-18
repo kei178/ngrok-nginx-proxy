@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  nginx:
+    restart: always
+    build:
+      context: .
+    environment:
+      PORT: 80
+    ports:
+      - '80:80'
